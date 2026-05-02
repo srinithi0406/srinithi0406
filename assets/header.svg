@@ -1,0 +1,166 @@
+<svg width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Nebula gradient background -->
+    <radialGradient id="nebula1" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0533" />
+      <stop offset="40%" stop-color="#0d0221" />
+      <stop offset="100%" stop-color="#050010" />
+    </radialGradient>
+    <radialGradient id="nebula2" cx="70%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#1b1464" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#0b0033" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="nebula3" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#2d1b69" stop-opacity="0.6" />
+      <stop offset="60%" stop-color="#1a0a3e" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="nebula4" cx="80%" cy="25%" r="35%">
+      <stop offset="0%" stop-color="#4a1942" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#2d1250" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="nebula5" cx="15%" cy="70%" r="30%">
+      <stop offset="0%" stop-color="#1b3a5c" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#0d1f3c" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <!-- Glow filter for stars -->
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes twinkle1 {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    @keyframes twinkle2 {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 0.1; }
+    }
+    @keyframes twinkle3 {
+      0%, 100% { opacity: 0.2; }
+      30% { opacity: 0.9; }
+      70% { opacity: 0.4; }
+    }
+    @keyframes twinkle4 {
+      0%, 100% { opacity: 0.6; }
+      40% { opacity: 0.15; }
+      80% { opacity: 0.8; }
+    }
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    @keyframes subtlePulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.7; }
+    }
+    .star-t1 { animation: twinkle1 3s ease-in-out infinite; }
+    .star-t2 { animation: twinkle2 4s ease-in-out infinite; }
+    .star-t3 { animation: twinkle3 5s ease-in-out infinite; }
+    .star-t4 { animation: twinkle4 3.5s ease-in-out infinite; }
+    .nebula-pulse { animation: subtlePulse 8s ease-in-out infinite; }
+    .name-text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+      font-size: 44px;
+      fill: #ffffff;
+      filter: url(#textGlow);
+      animation: shimmer 4s ease-in-out infinite;
+    }
+    .subtitle-text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      fill: #9FD3FF;
+      opacity: 0.9;
+    }
+  </style>
+
+  <!-- Base background -->
+  <rect width="900" height="200" fill="url(#nebula1)" />
+  
+  <!-- Nebula layers -->
+  <rect width="900" height="200" fill="url(#nebula2)" />
+  <rect width="900" height="200" fill="url(#nebula3)" class="nebula-pulse" />
+  <rect width="900" height="200" fill="url(#nebula4)" />
+  <rect width="900" height="200" fill="url(#nebula5)" class="nebula-pulse" style="animation-delay: -4s;" />
+
+  <!-- Nebula cloud wisps -->
+  <ellipse cx="250" cy="80" rx="200" ry="60" fill="#2d1b69" opacity="0.15" class="nebula-pulse" />
+  <ellipse cx="650" cy="120" rx="180" ry="50" fill="#1b3a5c" opacity="0.12" class="nebula-pulse" style="animation-delay: -3s;" />
+  <ellipse cx="450" cy="50" rx="150" ry="40" fill="#4a1942" opacity="0.1" class="nebula-pulse" style="animation-delay: -6s;" />
+  
+  <!-- Stars - Layer 1 (dim, small) -->
+  <circle cx="45" cy="30" r="0.8" fill="#ffffff" opacity="0.4" class="star-t2" />
+  <circle cx="120" cy="15" r="0.6" fill="#ffffff" opacity="0.3" class="star-t3" />
+  <circle cx="200" cy="45" r="0.7" fill="#ffffff" opacity="0.5" class="star-t1" />
+  <circle cx="310" cy="20" r="0.5" fill="#ffffff" opacity="0.3" class="star-t4" />
+  <circle cx="390" cy="55" r="0.6" fill="#ffffff" opacity="0.4" class="star-t2" />
+  <circle cx="500" cy="18" r="0.8" fill="#ffffff" opacity="0.3" class="star-t3" />
+  <circle cx="580" cy="40" r="0.5" fill="#ffffff" opacity="0.5" class="star-t1" />
+  <circle cx="670" cy="25" r="0.7" fill="#ffffff" opacity="0.4" class="star-t4" />
+  <circle cx="750" cy="50" r="0.6" fill="#ffffff" opacity="0.3" class="star-t2" />
+  <circle cx="830" cy="15" r="0.8" fill="#ffffff" opacity="0.5" class="star-t3" />
+  <circle cx="870" cy="60" r="0.5" fill="#ffffff" opacity="0.4" class="star-t1" />
+  <circle cx="60" cy="160" r="0.7" fill="#ffffff" opacity="0.3" class="star-t4" />
+  <circle cx="150" cy="175" r="0.6" fill="#ffffff" opacity="0.5" class="star-t2" />
+  <circle cx="260" cy="155" r="0.8" fill="#ffffff" opacity="0.4" class="star-t3" />
+  <circle cx="340" cy="180" r="0.5" fill="#ffffff" opacity="0.3" class="star-t1" />
+  <circle cx="450" cy="165" r="0.7" fill="#ffffff" opacity="0.5" class="star-t4" />
+  <circle cx="530" cy="185" r="0.6" fill="#ffffff" opacity="0.4" class="star-t2" />
+  <circle cx="640" cy="160" r="0.8" fill="#ffffff" opacity="0.3" class="star-t3" />
+  <circle cx="720" cy="178" r="0.5" fill="#ffffff" opacity="0.5" class="star-t1" />
+  <circle cx="800" cy="165" r="0.7" fill="#ffffff" opacity="0.4" class="star-t4" />
+  <circle cx="880" cy="185" r="0.6" fill="#ffffff" opacity="0.3" class="star-t2" />
+
+  <!-- Stars - Layer 2 (brighter, medium) -->
+  <circle cx="80" cy="70" r="1.0" fill="#ffffff" opacity="0.6" class="star-t1" filter="url(#starGlow)" />
+  <circle cx="175" cy="95" r="0.9" fill="#c8d8ff" opacity="0.5" class="star-t3" filter="url(#starGlow)" />
+  <circle cx="280" cy="130" r="1.1" fill="#ffffff" opacity="0.7" class="star-t2" filter="url(#starGlow)" />
+  <circle cx="400" cy="145" r="0.8" fill="#ffe8c8" opacity="0.5" class="star-t4" filter="url(#starGlow)" />
+  <circle cx="520" cy="135" r="1.0" fill="#ffffff" opacity="0.6" class="star-t1" filter="url(#starGlow)" />
+  <circle cx="610" cy="150" r="0.9" fill="#c8d8ff" opacity="0.5" class="star-t3" filter="url(#starGlow)" />
+  <circle cx="710" cy="130" r="1.1" fill="#ffffff" opacity="0.7" class="star-t2" filter="url(#starGlow)" />
+  <circle cx="790" cy="100" r="0.8" fill="#ffe8c8" opacity="0.5" class="star-t4" filter="url(#starGlow)" />
+  <circle cx="850" cy="130" r="1.0" fill="#ffffff" opacity="0.6" class="star-t1" filter="url(#starGlow)" />
+
+  <!-- Stars - Layer 3 (bright, prominent) -->
+  <circle cx="100" cy="120" r="1.5" fill="#ffffff" opacity="0.8" class="star-t4" filter="url(#starGlow)" />
+  <circle cx="230" cy="35" r="1.3" fill="#e0e8ff" opacity="0.7" class="star-t1" filter="url(#starGlow)" />
+  <circle cx="370" cy="100" r="1.4" fill="#ffffff" opacity="0.9" class="star-t3" filter="url(#starGlow)" />
+  <circle cx="550" cy="60" r="1.2" fill="#ffe8d0" opacity="0.7" class="star-t2" filter="url(#starGlow)" />
+  <circle cx="680" cy="80" r="1.5" fill="#ffffff" opacity="0.8" class="star-t4" filter="url(#starGlow)" />
+  <circle cx="820" cy="75" r="1.3" fill="#d8e0ff" opacity="0.7" class="star-t1" filter="url(#starGlow)" />
+
+  <!-- Extra scattered dim stars -->
+  <circle cx="30" cy="100" r="0.4" fill="#ffffff" opacity="0.25" class="star-t3" />
+  <circle cx="160" cy="140" r="0.5" fill="#ffffff" opacity="0.2" class="star-t1" />
+  <circle cx="330" cy="60" r="0.4" fill="#ffffff" opacity="0.3" class="star-t4" />
+  <circle cx="470" cy="110" r="0.5" fill="#ffffff" opacity="0.2" class="star-t2" />
+  <circle cx="600" cy="100" r="0.4" fill="#ffffff" opacity="0.25" class="star-t3" />
+  <circle cx="760" cy="145" r="0.5" fill="#ffffff" opacity="0.2" class="star-t1" />
+  <circle cx="430" cy="30" r="0.4" fill="#ffffff" opacity="0.3" class="star-t4" />
+  <circle cx="860" cy="45" r="0.5" fill="#ffffff" opacity="0.2" class="star-t2" />
+
+  <!-- Name text -->
+  <text x="450" y="90" text-anchor="middle" class="name-text">Srinithi A</text>
+  
+  <!-- Subtitle -->
+  <text x="450" y="125" text-anchor="middle" class="subtitle-text">Full Stack Developer  |  AI/ML Enthusiast</text>
+</svg>
