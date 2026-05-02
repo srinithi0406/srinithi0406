@@ -180,8 +180,8 @@ I build end-to-end applications that combine clean frontend systems with robust 
 | Project | Description | Link |
 |---------|-------------|------|
 | **Movie Recommendation System** | Content-based recommendation engine using TF-IDF & cosine similarity | [![Repo](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/srinithi0406/Movie_Recommendation_ml) [![Live](https://img.shields.io/badge/-Live-00C853?style=flat-square&logo=streamlit&logoColor=white)](https://movies-reccomendation.streamlit.app/) |
-| **ShopZ** | Full-stack e-commerce application with cart, checkout & auth | [![Repo](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/srinithi0406/ShopZ) [![Live](https://img.shields.io/badge/-Live-00C853?style=flat-square&logo=vercel&logoColor=white)](https://shop-z-beta.vercel.app/) |
-| **Gig Insurance** | Insurance platform for gig workers with AI-driven risk analytics | [![Repo](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Status-Code-401/Gig-Insurance-Company) |
+| **ShopZ** | - Responsive e-commerce UI with product listing, cart, and checkout with dynamic cart updates | [![Repo](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/srinithi0406/ShopZ) [![Live](https://img.shields.io/badge/-Live-00C853?style=flat-square&logo=vercel&logoColor=white)](https://shop-z-beta.vercel.app/) |
+| **Gig Insurance** | Parametric insurance platform for gig workers with AI-driven risk analytics | [![Repo](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Status-Code-401/Gig-Insurance-Company) |
 
 ---
 
