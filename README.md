@@ -1,12 +1,11 @@
 
-<!-- Nebula Night Sky Header -->
 <p align="center">
   <img src="assets/header.svg" width="100%" alt="Srinithi A - Full Stack Developer | AI/ML Enthusiast" />
 </p>
 
-<!-- Typing Animation -->
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=9FD3FF&center=true&vCenter=true&width=700&lines=Full+Stack+Developer+%7C+AI%2FML+Enthusiast;Building+Intelligent+%26+Scalable+Applications;Passionate+About+Hackathons+Real+World+Projects+and+Innovation" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=9FD3FF&center=true&vCenter=true&width=700&lines=Full+Stack+Developer+%7C+AI%2FML+Enthusiast;Building+Intelligent+%26+Scalable+Applications;Passionate+About+Hackathons+Real+World+Projects" />
 </p>
 
 <p align="center">
