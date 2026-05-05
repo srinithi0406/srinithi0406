@@ -230,7 +230,7 @@ I build end-to-end applications that combine clean frontend systems with robust 
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=srinithi0406&theme=tokyonight&hide_border=true&background=0D1117&ring=9FD3FF&fire=FF6B6B&currStreakLabel=9FD3FF" width="60%" />
+  <img src="https://streak-stats.demolab.com?user=srinithi0406&theme=tokyonight&hide_border=true&background=0D1117&ring=9FD3FF&fire=FF6B6B&currStreakLabel=9FD3FF" width="60%" />
 </p>
 
 ---
@@ -264,5 +264,5 @@ I build end-to-end applications that combine clean frontend systems with robust 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=120&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=120&section=footer&width=1000" width="100%" />
 </p>
